@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DynamicProxySamples
 {
-    public class Class1
+    public interface IWriter
     {
+        void Write(string text);
     }
 }
