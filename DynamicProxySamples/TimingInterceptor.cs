@@ -8,7 +8,7 @@ using Castle.DynamicProxy;
 
 namespace DynamicProxySamples
 {
-    public class TimingInterceptor:IInterceptor
+    public class TimingInterceptor : StandardInterceptor
     {
         private readonly IWriter writer;
         private readonly Stopwatch stopwatch = new Stopwatch();
@@ -18,15 +18,17 @@ namespace DynamicProxySamples
             this.writer = writer;
         }
 
-        public void Intercept(IInvocation invocation)
+        protected override void PreProceed(IInvocation invocation)
         {
             this.writer.Write($"{invocation.TargetType.Name}.{invocation.Method.Name} - start invocation");
             stopwatch.Restart();
+        }
 
-            invocation.Proceed();
-
+        protected override void PostProceed(IInvocation invocation)
+        {
             stopwatch.Stop();
             this.writer.Write($"{invocation.TargetType.Name}.{invocation.Method.Name} - {stopwatch.ElapsedMilliseconds} ms - end invocation");
         }
+        
     }
 }
