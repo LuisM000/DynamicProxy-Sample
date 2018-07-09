@@ -12,10 +12,10 @@ namespace DynamicProxySamples.Test
     public class TimingExtensionTest
     {
         [Fact]
-        public void When_AddTimingToObject_IsProxyable_Test()
+        public void When_AddTimingToObject_IsProxy_Test()
         {
             User user = new User().AddTiming();
-            Assert.IsAssignableFrom<IProxyTargetAccessor>(user);
+            Assert.True(ProxyUtil.IsProxy(user));
         }
 
         [Fact]
