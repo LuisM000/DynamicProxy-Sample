@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxySamples", "Dyna
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxySamples.Test", "DynamicProxySamples.Test\DynamicProxySamples.Test.csproj", "{358AEEB0-BC5C-4F68-AF9F-40AC40CFA3FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxySamples.Console", "DynamicProxySamples.Console\DynamicProxySamples.Console.csproj", "{C155C269-BD29-4056-924D-4664CC433318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{358AEEB0-BC5C-4F68-AF9F-40AC40CFA3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{358AEEB0-BC5C-4F68-AF9F-40AC40CFA3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{358AEEB0-BC5C-4F68-AF9F-40AC40CFA3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C155C269-BD29-4056-924D-4664CC433318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C155C269-BD29-4056-924D-4664CC433318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C155C269-BD29-4056-924D-4664CC433318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C155C269-BD29-4056-924D-4664CC433318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
